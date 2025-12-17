@@ -329,4 +329,9 @@ footer i {
     .div {
         display: block;
     }
+    footer{
+        flex-direction:column;
+        gap:10px;
+    }
+
 }
