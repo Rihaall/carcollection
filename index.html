@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Collection</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+ <div class="bar">
+
+     <div class="navbar">
+         <div class="logo"><i class="fa-solid fa-car" style="color: #fff;"></i>Car Collection</div>
+         <div class="nav-links">
+             <a href="#home">Home</a>
+             <a href="#collection">Collection</a>
+             <a href="#about">About</a>
+             <a href="#">Contact</a>
+            </div>
+            <div class="social">
+                <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+</div>
+</div>
+<!-- MOBILE NAVBAR -->
+ <div class="div">
+
+     <div class="navbar">
+         
+         <div class="logo"><i class="fa-solid fa-car" style="color: #fff;"></i>Car Collection</div>
+         <div class="menu">
+             <button class="menu-toggle" onclick="drawer()">
+                 
+                 <div class="hamburger" ></div>
+                 <div class="hamburger"></div>
+                 <div class="hamburger"></div>
+                </button>
+            </div>
+            <div class="mob-navbar">
+                <div class="mob-nav-links">
+                    <a href="#home">Home</a>
+                    <hr>
+                    <a href="#collection">Collection</a>
+                    <hr>
+                    <a href="#about">About</a>
+                    <hr>
+                    <a href="#">Contact</a>
+                    <hr>
+                </div>
+                <div class="mob-social">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <!-- HERO -->
+    </div>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Premium Car Collection</h1>
+        <p>Discover the world's most exclusive and luxurious cars.</p>
+        <button>View Collection</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Our Collection</h2>
+    <p>
+        Explore our curated selection of exotic sports cars, classic beauties,
+        and modern supercars. Experience the thrill of automotive excellence.
+    </p>
+</section>
+
+<!-- CAR CARDS -->
+<section class="cards" id="collection">
+    <div class="card">
+        <img src="sports.jpg" alt="">
+        <h3>Exotic Supercars</h3>
+        <p>High-performance machines with stunning design.</p>
+    </div>
+
+    <div class="card">
+        <img src="classic.jpg" alt="">
+        <h3>Classic Cars</h3>
+        <p>Timeless legends from the golden age of motoring.</p>
+    </div>
+
+    <div class="card">
+        <img src="luxury.jpg" alt="">
+        <h3>Luxury & Performance</h3>
+        <p>The finest in luxury and cutting-edge technology.</p>
+    </div>
+    <div class="card">
+        <img src="sports.jpg" alt="">
+        <h3>Exotic Supercars</h3>
+        <p>High-performance machines with stunning design.</p>
+    </div>
+
+    <div class="card">
+        <img src="benz.avif" alt="">
+        <h3>Classic Cars</h3>
+        <p>Timeless legends from the golden age of motoring.</p>
+    </div>
+
+    <div class="card">
+        <img src="porche.avif" alt="">
+        <h3>Luxury & Performance</h3>
+        <p>The finest in luxury and cutting-edge technology.</p>
+    </div>
+    <div class="card">
+        <img src="sports.jpg" alt="">
+        <h3>Exotic Supercars</h3>
+        <p>High-performance machines with stunning design.</p>
+    </div>
+
+    <div class="card">
+        <img src="classic.jpg" alt="">
+        <h3>Classic Cars</h3>
+        <p>Timeless legends from the golden age of motoring.</p>
+    </div>
+
+    <div class="card">
+        <img src="luxury.jpg" alt="">
+        <h3>Luxury & Performance</h3>
+        <p>The finest in luxury and cutting-edge technology.</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy 2025 Car Collection. All rights reserved.</p>
+    <div>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+    </div>
+</footer>
+<script>
+const toggleBtn = document.querySelector('.menu-toggle');
+const bars = document.querySelectorAll('.hamburger');
+const mobNav = document.querySelector('.mob-navbar');
+
+function drawer() {
+    // animate hamburger bars
+    bars.forEach(bar => {
+        bar.classList.toggle('hamburger-toggle');
+    });
+
+    // drawer animation
+    mobNav.classList.toggle('active');
+}
+
+</script>
+
+</script>
+</body>
+</html>
